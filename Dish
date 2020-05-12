@@ -2,7 +2,7 @@
 int main()
 {
 int a;
-printf("Enter a number b/w 1-5 to print out a Dish");
+printf("Enter a number b/w 1-5 to print out a Dish\n");
 scanf("%d",&a);
 switch(a)
 {case 1: printf("Idli\nPrice:Rs.20");
