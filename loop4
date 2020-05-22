@@ -5,7 +5,7 @@ int pn(int x, int y)
   if(x%m==0 && x%n==0)
     return x;
   else
-    pn(x+1,y); 	  
+    pn(x+((m>n)?m:n),y); 	  
 }
  
 int main()
