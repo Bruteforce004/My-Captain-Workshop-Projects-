@@ -6,10 +6,11 @@ int main()
   FILE* fp;
   int i=0;
   char *s;
-  char a[50];
+  char *a;
   char c;
   printf("Enter the data for the file:\n");
   s= (char*)malloc(sizeof(char));
+  a= (char*)malloc(sizeof(char));
   gets(s);
   s = (char*)realloc(s,strlen(s)*sizeof(char));
   fp=fopen("test1.txt","w");
@@ -24,6 +25,7 @@ int main()
     c=getc(fp);
   }
   a[i]='\0';
+  a = (char*)realloc(s,strlen(a)*sizeof(char));
   strrev(a);
   printf("The data of the file in reverse is : %s",a);
   fclose(fp);
