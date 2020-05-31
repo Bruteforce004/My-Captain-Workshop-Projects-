@@ -16,7 +16,7 @@ int main()
   fp=fopen("test1.txt","w");
   fprintf(fp,"%s",s);
   fclose(fp);
-  fp=fopen("gag.txt","r");
+  fp=fopen("test1.txt","r");
   c = getc(fp);
   while(c!= EOF) 
   { 	
