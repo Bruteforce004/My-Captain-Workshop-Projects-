@@ -4,15 +4,17 @@
 int main()
 {   
   FILE* fp;
-  int i=0;
+  int i=0,b;
   char *s;
   char *a;
   char c;
-  printf("Enter the data for the file:\n");
-  s= (char*)malloc(sizeof(char));
-  a= (char*)malloc(sizeof(char));
+  printf("Enter the maximum word limit for your file:\n");
+  scanf("%d",&b);
+  printf("\nEnter the data for the file:\n");
+  s= (char*)malloc(b*sizeof(char));
+  a= (char*)malloc(b*sizeof(char));
+  scanf("%c",&c);
   gets(s);
-  s = (char*)realloc(s,strlen(s)*sizeof(char));
   fp=fopen("test1.txt","w");
   fprintf(fp,"%s",s);
   fclose(fp);
@@ -25,9 +27,8 @@ int main()
     c=getc(fp);
   }
   a[i]='\0';
-  a = (char*)realloc(s,strlen(a)*sizeof(char));
   strrev(a);
-  printf("The data of the file in reverse is : %s",a);
+  printf("\nThe data of the file in reverse is : %s",a);
   fclose(fp);
   fp=fopen("test2.txt","w");
   fprintf(fp,"%s",a);
