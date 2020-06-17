@@ -1,0 +1,22 @@
+/*Program to find the size of a few datatypes*/
+#include <iostream>
+using namespace std;
+int main() 
+{   cout<<"Size of char: "<<sizeof(char)<<" byte";
+    cout<<"\nSize of int: "<<sizeof(int)<<" bytes";
+    cout<<"\nSize of float: "<<sizeof(float)<<" bytes";
+    cout<<"\nSize of double: "<<sizeof(double)<<" bytes";
+return 0; 
+} 
+
+/*Program to find the product of 2 numbers*/
+#include<iostream>
+using namespace std;
+int main()
+{ 
+float a,b;
+cout<<"Enter 2 numbers : ";
+cin>>a>>b;
+cout<<"\nProduct : "<<a*b;
+return 0;
+}
