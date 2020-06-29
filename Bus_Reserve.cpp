@@ -599,7 +599,19 @@ while(1)
             using namespace std::this_thread; 
             using namespace std::chrono; 
 
-             sleep_for(seconds(5));
+             sleep_for(seconds(1));
+             cout<<" .";
+             sleep_for(seconds(1));
+             cout<<" .";
+			 sleep_for(seconds(1));
+             cout<<" .";
+             sleep_for(seconds(1));
+             cout<<" .";
+             sleep_for(seconds(1));
+             cout<<" .";
+             sleep_for(seconds(1));
+             cout<<" .";
+             sleep_for(seconds(1));
              main();
 
 
